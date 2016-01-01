@@ -1,0 +1,43 @@
+{
+  "jspm": {
+    "dependencies": {
+      "brace": "npm:brace@^0.7.0",
+      "iframe": "npm:iframe@^0.3.1",
+      "lodash": "npm:lodash@^3.10.1",
+      "react": "npm:react@^0.14.5",
+      "react-ace": "npm:react-ace@^3.0.0",
+      "react-dom": "npm:react-dom@^0.14.5",
+      "react-github-corner": "npm:react-github-corner@^0.1.0",
+      "react-portal-tooltip": "npm:react-portal-tooltip@^1.0.0",
+      "whatwg-fetch": "npm:whatwg-fetch@^0.10.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "name": "react-play",
+  "version": "1.0.0",
+  "description": "A React.js playground powered by JSPM/SystemJS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "jspm setmode remote && jspm depcache index.js && surge . && jspm setmode local",
+    "bundle": "jspm bundle index.js bundle.js --inject --minify && cp system.js system.js.map CNAME config.js base64-plugin.js index.html bundle/ && mv bundle.js bundle.js.map bundle/ && jspm unbundle && surge bundle/",
+    "postinstall": "jspm install && cp ../jspm_packages/system.js ../jspm_packages/system.js.map .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cem2ran/react-play.git"
+  },
+  "author": "cem2ran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cem2ran/react-play/issues"
+  },
+  "homepage": "https://github.com/cem2ran/react-play#readme",
+  "devDependencies": {
+    "jspm": "^0.16.19"
+  }
+}
