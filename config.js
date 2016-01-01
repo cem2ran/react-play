@@ -26,6 +26,7 @@ System.config({
     "react-dom": "npm:react-dom@0.14.5",
     "react-github-corner": "npm:react-github-corner@0.1.0",
     "react-portal-tooltip": "npm:react-portal-tooltip@1.0.0",
+    "srcdoc-polyfill": "npm:srcdoc-polyfill@0.2.0",
     "whatwg-fetch": "npm:whatwg-fetch@0.10.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
