@@ -23,6 +23,7 @@ System.config({
     "lodash": "npm:lodash@3.10.1",
     "react": "npm:react@0.14.5",
     "react-ace": "npm:react-ace@3.0.0",
+    "react-dimensions": "npm:react-dimensions@1.0.1",
     "react-dom": "npm:react-dom@0.14.5",
     "react-github-corner": "npm:react-github-corner@0.1.0",
     "react-portal-tooltip": "npm:react-portal-tooltip@1.0.0",
@@ -147,6 +148,10 @@ System.config({
       "brace": "npm:brace@0.7.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "react": "npm:react@0.14.5"
+    },
+    "npm:react-dimensions@1.0.1": {
+      "react": "npm:react@0.14.5",
+      "react-dom": "npm:react-dom@0.14.5"
     },
     "npm:react-dom@0.14.5": {
       "react": "npm:react@0.14.5"

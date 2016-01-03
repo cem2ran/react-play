@@ -1,0 +1,6 @@
+<script>
+// Step 3
+var code = window.location.toString().replace(/.+code=/, '');
+window.opener.postMessage({type: "react.play.token", payload: code}, window.location);
+window.close();
+</script>
