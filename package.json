@@ -24,9 +24,9 @@
   "description": "A React.js playground powered by JSPM/SystemJS.",
   "main": "index.js",
   "scripts": {
-    "build": "jspm setmode remote && jspm depcache index.js && surge . && jspm setmode local",
-    "bundle": "jspm bundle index.js bundle.js --inject --minify && cp system.js system.js.map CNAME config.js base64-plugin.js index.html oauth_redirect.html bundle/ && mv bundle.js bundle.js.map bundle/ && jspm unbundle && surge bundle/",
-    "postinstall": "jspm install && cp ../jspm_packages/system.js ../jspm_packages/system.js.map .",
+    "depcache": "jspm setmode remote && jspm depcache index.js && surge . && jspm setmode local",
+    "bundle": "jspm bundle index.js bundle.js --inject --minify && cp system.js system.js.map CNAME config.js index.html oauth_redirect.html bundle/ && mv bundle.js bundle.js.map bundle/ && jspm unbundle && surge bundle/",
+    "postinstall": "jspm install && cp jspm_packages/system.js jspm_packages/system.js.map .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
